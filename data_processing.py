@@ -3,7 +3,7 @@ import math
 
 def calculate_mean(numbers):
     """
-    Calculates the mean of a list of numbers.
+    Calculates the mean of a list of numbers!
     """
     return sum(numbers) / len(numbers)
 
