@@ -1,7 +1,7 @@
 <details>
   <summary><strong>AI Usage</strong></summary>
   
-  *Select the category below where AI provided assistance in this pull request:*
+  *Select all categories below where AI provided assistance in this pull request:*
 
   - [ ] Feature
   - [ ] Bug Fix
@@ -10,7 +10,7 @@
   - [ ] Performance Improvement
   - [ ] Test
   - [ ] Security Fix
-  - [ ] Chore/Maintenance
+  - [ ] Maintenance
   - [ ] UI/UX Update
   - [ ] Hotfix
   - [ ] Style
