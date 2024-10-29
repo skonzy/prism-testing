@@ -1,6 +1,20 @@
-## Description
-<!-- Briefly describe the changes made in this pull request -->
+<details>
+  <summary><strong>AI Usage</strong></summary>
+  
+  *Select the category below where AI provided assistance in this pull request:*
 
-## AI Usage
-- [ ] AI-assisted code
-  - If checked, please describe how AI contributed to this code (e.g., code generation, refactoring, documentation support):
+  - [ ] Feature
+  - [ ] Bug Fix
+  - [ ] Refactor
+  - [ ] Documentation
+  - [ ] Performance Improvement
+  - [ ] Test
+  - [ ] Security Fix
+  - [ ] Chore/Maintenance
+  - [ ] UI/UX Update
+  - [ ] Hotfix
+  - [ ] Style
+  - [ ] Infrastructure
+  - [ ] Other
+
+</details>
