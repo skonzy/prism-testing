@@ -29,3 +29,31 @@ def factorial(n):
     for i in range(1, n + 1):
         result *= i
     return result
+
+def is_prime(n):
+    """
+    Checks if a number is prime.
+    """
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def fibonacci(n):
+    """
+    Generates the Fibonacci sequence up to a certain number of terms.
+    """
+    fib_sequence = [0, 1]
+    while len(fib_sequence) < n:
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
+
+def gcd(a, b):
+    """
+    Calculates the greatest common divisor of two numbers.
+    """
+    while b:
+        a, b = b, a % b
+    return a
