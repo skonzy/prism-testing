@@ -57,3 +57,9 @@ def gcd(a, b):
     while b:
         a, b = b, a % b
     return a
+
+def lcm(a, b):
+    """
+    Calculates the least common multiple of two numbers.
+    """
+    return a * b // gcd(a, b)
