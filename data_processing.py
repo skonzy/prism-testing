@@ -51,3 +51,10 @@ def calculate_z_scores(numbers):
     mean = calculate_mean(numbers)
     std_dev = calculate_standard_deviation(numbers)
     return [(x - mean) / std_dev for x in numbers]
+
+def calculate_outliers(numbers):
+    """
+    Identifies outliers in a list of numbers.
+    """
+    z_scores = calculate_z_scores(numbers)
+    return [numbers[i] for i, z in enumerate(z_scores) if abs(z) > 3]
