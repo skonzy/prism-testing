@@ -49,3 +49,24 @@ def merge(left, right):
     result.extend(left[i:])
     result.extend(right[j:])
     return result
+
+def radixsort(arr):
+    """
+    Performs radix sort on a list of numbers.
+    """
+    RADIX = 10
+    placement = 1
+    max_digit = max(arr)
+
+    while placement < max_digit:
+        buckets = [list() for _ in range(RADIX)]
+        for i in arr:
+            tmp = int((i / placement) % RADIX)
+            buckets[tmp].append(i)
+        a = 0
+        for b in range(RADIX):
+            for i in buckets[b]:
+                arr[a] = i
+                a += 1
+        placement *= RADIX
+    return arr
