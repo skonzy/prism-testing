@@ -43,3 +43,11 @@ def calculate_covariance(x, y):
     mean_y = calculate_mean(y)
     n = len(x)
     return sum((x[i] - mean_x) * (y[i] - mean_y) for i in range(n)) / n
+
+def calculate_z_scores(numbers):
+    """
+    Calculates the z-scores of a list of numbers.
+    """
+    mean = calculate_mean(numbers)
+    std_dev = calculate_standard_deviation(numbers)
+    return [(x - mean) / std_dev for x in numbers]
