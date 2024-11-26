@@ -108,3 +108,9 @@ def is_pronic(n):
     Checks if a number is a pronic number.
     """
     return any(i * (i + 1) == n for i in range(n))
+
+def is_square(n):
+    """
+    Checks if a number is a square number.
+    """
+    return n >= 0 and int(n ** 0.5) ** 2 == n
