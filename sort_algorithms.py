@@ -21,3 +21,14 @@ def bubblesort(arr):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
+
+def mergesort(arr):
+    """
+    Performs merge sort on a list of numbers.
+    """
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    left = mergesort(arr[:mid])
+    right = mergesort(arr[mid:])
+    return merge(left, right)
