@@ -96,3 +96,21 @@ def is_perfect(n):
     if n < 2:
         return False
     return sum(i for i in range(1, n) if n % i == 0) == n
+
+def is_power_of_two(n):
+    """
+    Checks if a number is a power of two.
+    """
+    return n > 0 and n & (n - 1) == 0
+
+def is_pronic(n):
+    """
+    Checks if a number is a pronic number.
+    """
+    return any(i * (i + 1) == n for i in range(n))
+
+def is_square(n):
+    """
+    Checks if a number is a square number.
+    """
+    return n >= 0 and int(n ** 0.5) ** 2 == n
