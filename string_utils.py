@@ -17,3 +17,9 @@ def reverse_string(s):
     Reverses a string.
     """
     return s[::-1]
+
+def remove_duplicates(s):
+    """
+    Removes duplicate characters from a string.
+    """
+    return ''.join(sorted(set(s), key=s.index))
