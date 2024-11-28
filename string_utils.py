@@ -53,3 +53,9 @@ def count_lines(s):
     Counts the number of lines in a string.
     """
     return s.count('\n') + 1
+
+def count_occurrences(s, sub):
+    """
+    Counts the number of occurrences of a substring in a string.
+    """
+    return s.count(sub)
