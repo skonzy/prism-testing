@@ -65,3 +65,9 @@ def remove_whitespace(s):
     Removes all whitespace characters from a string.
     """
     return ''.join(s.split())
+
+def remove_punctuation(s):
+    """
+    Removes all punctuation characters from a string.
+    """
+    return ''.join(c for c in s if c.isalnum() or c.isspace())
