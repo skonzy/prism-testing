@@ -47,3 +47,9 @@ def count_characters(s):
     Counts the number of characters in a string.
     """
     return len(s)
+
+def count_lines(s):
+    """
+    Counts the number of lines in a string.
+    """
+    return s.count('\n') + 1
