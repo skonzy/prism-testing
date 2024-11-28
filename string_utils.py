@@ -59,3 +59,9 @@ def count_occurrences(s, sub):
     Counts the number of occurrences of a substring in a string.
     """
     return s.count(sub)
+
+def remove_whitespace(s):
+    """
+    Removes all whitespace characters from a string.
+    """
+    return ''.join(s.split())
