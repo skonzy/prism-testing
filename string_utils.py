@@ -35,3 +35,9 @@ def count_consonants(s):
     Counts the number of consonants in a string.
     """
     return sum(1 for c in s if c.isalpha() and c.lower() not in 'aeiou')
+
+def count_words(s):
+    """
+    Counts the number of words in a string.
+    """
+    return len(s.split())
