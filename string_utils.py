@@ -23,3 +23,15 @@ def remove_duplicates(s):
     Removes duplicate characters from a string.
     """
     return ''.join(sorted(set(s), key=s.index))
+
+def count_vowels(s):
+    """
+    Counts the number of vowels in a string.
+    """
+    return sum(1 for c in s if c.lower() in 'aeiou')
+
+def count_consonants(s):
+    """
+    Counts the number of consonants in a string.
+    """
+    return sum(1 for c in s if c.isalpha() and c.lower() not in 'aeiou')
