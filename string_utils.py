@@ -41,3 +41,9 @@ def count_words(s):
     Counts the number of words in a string.
     """
     return len(s.split())
+
+def count_characters(s):
+    """
+    Counts the number of characters in a string.
+    """
+    return len(s)
