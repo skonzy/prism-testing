@@ -107,3 +107,9 @@ def remove_empty_lines(s):
     Removes all empty lines from a string.
     """
     return '\n'.join(line for line in s.split('\n') if line.strip())
+
+def remove_empty_lines_v2(s):
+    """
+    Removes all empty lines from a string.
+    """
+    return '\n'.join(line for line in s.split('\n') if line)
