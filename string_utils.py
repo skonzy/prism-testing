@@ -89,3 +89,9 @@ def remove_newline(s):
     Removes all newline characters from a string.
     """
     return s.replace('\n', '')
+
+def remove_tabs(s):
+    """
+    Removes all tab characters from a string.
+    """
+    return s.replace('\t', '')
