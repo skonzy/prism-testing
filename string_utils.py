@@ -77,3 +77,9 @@ def remove_digits(s):
     Removes all digit characters from a string.
     """
     return ''.join(c for c in s if not c.isdigit())
+
+def remove_special_characters(s):
+    """
+    Removes all special characters from a string.
+    """
+    return ''.join(c for c in s if c.isalnum())
