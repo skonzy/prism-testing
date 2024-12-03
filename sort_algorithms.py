@@ -114,3 +114,20 @@ def insertionsort(arr):
             j -= 1
         arr[j + 1] = key
     return arr
+
+def shellsort(arr):
+    """
+    Performs shell sort on a list of numbers.
+    """
+    n = len(arr)
+    gap = n // 2
+    while gap > 0:
+        for i in range(gap, n):
+            temp = arr[i]
+            j = i
+            while j >= gap and arr[j - gap] > temp:
+                arr[j] = arr[j - gap]
+                j -= gap
+            arr[j] = temp
+        gap //= 2
+    return arr
