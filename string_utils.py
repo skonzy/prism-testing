@@ -95,3 +95,9 @@ def remove_tabs(s):
     Removes all tab characters from a string.
     """
     return s.replace('\t', '')
+
+def remove_spaces(s):
+    """
+    Removes all space characters from a string.
+    """
+    return s.replace(' ', '')
