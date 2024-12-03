@@ -83,3 +83,9 @@ def remove_special_characters(s):
     Removes all special characters from a string.
     """
     return ''.join(c for c in s if c.isalnum())
+
+def remove_newline(s):
+    """
+    Removes all newline characters from a string.
+    """
+    return s.replace('\n', '')
